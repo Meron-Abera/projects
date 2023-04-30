@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="department">
+        <item>Software Engineering</item>
+        <item>Electrical Engineering</item>
+        <item>Mechanical Engineering</item>
+        <item>Electro-mechanical Engineering</item>
+    </array>
+    <array name="college">
+        <item>Electrical and Mechanical Engineering</item>
+       <!-- <item>Architecture and Civil Engineering</item>
+        <item>Biological and Chemical Engineering</item>
+        <item>Social and Natural Sciences</item>
+        <item>Applied Sciences</item>-->
+    </array>
+</resources>

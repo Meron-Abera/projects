@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/MainBack"
+    tools:context=".Insert_class_Activity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_insert_class"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/WhiteSmoke"
+        app:layout_anchor="@+id/toolbar_beginner"
+        app:title="Create Class"
+        app:titleTextColor="#EE6D66"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create your class to manage daily attendance and report them."
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="32dp"
+        android:textColor="#9C9495"
+        android:focusedByDefault="false"
+        android:layout_marginTop="16dp"/>
+
+
+
+    <EditText
+        android:id="@+id/subjectName_createClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_back"
+        android:padding="16dp"
+        android:layout_marginBottom="22dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:focusedByDefault="true"
+        android:hint="Course name"/>
+
+    <EditText
+        android:id="@+id/className_createClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_back"
+        android:padding="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:focusedByDefault="true"
+        android:hint="Section"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select theme :"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textColor="@color/text_color_dark"
+        android:textSize="18dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"/>
+
+    <co.ceryle.radiorealbutton.library.RadioRealButtonGroup
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:rrbg_bottomLineSize="0dp"
+        app:rrbg_selectorColor="@color/theme_light"
+        app:rrbg_selectorSize="6dp"
+        app:rrbg_selectorRadius="1dp"
+        app:rrbg_selectorBringToFront="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        app:rrbg_dividerSize="0dp"
+        app:rrbg_position="0"
+        app:rrbg_animateTexts_enter="decelerate"
+        app:rrbg_animateImages_enter="overshoot">
+        <co.ceryle.radiorealbutton.library.RadioRealButton
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:rrb_image="@drawable/gradient_color_1"
+            app:rrb_imageHeight="50dp"
+            app:rrb_imageWidth="36dp"
+            app:rrb_ripple="true"
+            app:rrb_rippleColor="@color/black"
+            />
+        <co.ceryle.radiorealbutton.library.RadioRealButton
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:rrb_image="@drawable/gradient_color_2"
+            app:rrb_imageHeight="50dp"
+            app:rrb_imageWidth="36dp"
+            app:rrb_ripple="true"
+            app:rrb_rippleColor="@color/black"
+           />
+        <co.ceryle.radiorealbutton.library.RadioRealButton
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:rrb_image="@drawable/gradient_color_3"
+            app:rrb_imageHeight="50dp"
+            app:rrb_imageWidth="36dp"
+            app:rrb_ripple="true"
+            app:rrb_rippleColor="@color/black"
+            />
+        <co.ceryle.radiorealbutton.library.RadioRealButton
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:rrb_image="@drawable/gradient_color_4"
+            app:rrb_imageHeight="36dp"
+            app:rrb_imageWidth="36dp"
+            app:rrb_ripple="true"
+            app:rrb_rippleColor="@color/black"
+            />
+        <co.ceryle.radiorealbutton.library.RadioRealButton
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:rrb_image="@drawable/gradient_color_5"
+            app:rrb_imageHeight="36dp"
+            app:rrb_imageWidth="36dp"
+            app:rrb_ripple="true"
+            app:rrb_rippleColor="@color/black"
+            />
+        <co.ceryle.radiorealbutton.library.RadioRealButton
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:rrb_image="@drawable/gradient_color_6"
+            app:rrb_imageHeight="36dp"
+            app:rrb_imageWidth="36dp"
+            app:rrb_ripple="true"
+            app:rrb_rippleColor="@color/black"
+            />
+    </co.ceryle.radiorealbutton.library.RadioRealButtonGroup>
+
+    <Button
+        android:id="@+id/button_createClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="create"
+        android:background="@drawable/button_back"
+        android:padding="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
